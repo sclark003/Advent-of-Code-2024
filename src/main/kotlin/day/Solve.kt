@@ -28,7 +28,7 @@ abstract class Solve {
     open fun solveB(input: String): Int = 0
 
     protected fun readInput(day: String): String {
-        val inputStream: InputStream = File("src/main/kotlin/Day/Inputs/$day.txt").inputStream()
+        val inputStream: InputStream = File("src/main/kotlin/day/inputs/$day.txt").inputStream()
         val inputString = inputStream.bufferedReader().use { it.readText() }
         return inputString
     }
